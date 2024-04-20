@@ -2,7 +2,7 @@
 
 RgName=quick4answerNetworkRg #`az group list --query '[0].name' --output tsv`
 vmR
-Location="West US"  `#az group list --query '[0].location' --output tsv`
+Location="westus"  `#az group list --query '[0].location' --output tsv`
 
 date
 # Create a Virtual Network for the VMs
