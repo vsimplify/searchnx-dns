@@ -12,7 +12,7 @@ echo 'Creating a Virtual Network for the VMs'
 #     --resource-group $RgName \
 #     --location $Location \
 #     --name quickVnet \
-#     --subnet-name quickSubnet
+#     --subnet-name quickVM_Snet3
 
 # Create a Network Security Group
 echo '------------------------------------------'
@@ -36,7 +36,7 @@ for i in `seq 1 2`; do
     --resource-group $RgName \
     --name webNic$i \
     --vnet-name quickVnet \
-    --subnet quickSubnet \
+    --subnet quickVM_Snet3 \
     --network-security-group quickNSG \
     --location $Location
 done 
