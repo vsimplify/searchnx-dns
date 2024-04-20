@@ -1,6 +1,7 @@
 #!/bin/bash
 
 RgName=quick4answerNetworkRg #`az group list --query '[0].name' --output tsv`
+vmR
 Location="West US"  `#az group list --query '[0].location' --output tsv`
 
 date
@@ -128,6 +129,7 @@ echo '--------------------------------------------------------'
 echo '--------------------------------------------------------'
 echo '  Load balancer deployed to the IP Address shown above'
 echo '--------------------------------------------------------'
+
 
 
 
