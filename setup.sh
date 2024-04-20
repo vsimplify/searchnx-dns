@@ -15,9 +15,9 @@ echo 'Creating a Virtual Network for the VMs'
 #     --subnet-name quickVM_Snet3
 
 # Create a Network Security Group
-echo '------------------------------------------'
-echo 'Creating a Network Security Group'
-az network nsg create --resource-group $VmRgName --name quickNSG --Location $Location
+# echo '------------------------------------------'
+# echo 'Creating a Network Security Group'
+# az network nsg create --resource-group $VmRgName --name quickNSG --Location $Location
 
 az network nsg rule create -g $VmRgName --nsg-name quickNSG -n AllowAll80 --priority 101 --source-address-prefixes 'Internet' --source-port-ranges '*' --destination-address-prefixes '*' --destination-port-ranges 80 --access Allow --protocol Tcp --description "Allow all port 80 traffic"
 
